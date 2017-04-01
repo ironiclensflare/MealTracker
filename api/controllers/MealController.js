@@ -8,8 +8,8 @@
 module.exports = {
     new: function (req, res) {
         res.locals.flash = _.clone(req.session.flash);
-        res.view();
         req.session.flash = null;
+        res.view();
     },
 
     create: function (req, res) {
@@ -23,8 +23,8 @@ module.exports = {
                 return res.redirect('/meals/new');
             }
 
-            res.json(meal);
             req.session.flash = null;
+            res.json(meal);
         });
     }
 };
