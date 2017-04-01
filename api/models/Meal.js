@@ -13,7 +13,9 @@ module.exports = {
       unique: true,
       required: true
     },
-    date: 'date',
-    required: true
+    date: {
+      type: 'date',
+      required: true
+    }
   }
 };
