@@ -26,6 +26,13 @@ module.exports = {
             req.session.flash = null;
             res.json(meal);
         });
+    },
+
+    find: function (req, res) {
+        Meal.find().exec(function (err, meals) {
+            res.view({meals: meals});
+        });
+        
     }
 };
 

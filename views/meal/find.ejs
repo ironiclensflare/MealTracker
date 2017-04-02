@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>All <%= meals.length %> meals</h1>
+
+        <% meals.forEach(function (meal){ %>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><%= meal.name %></h3>
+            </div>
+            <div class="panel-body">
+                <p><%= meal.date %></p>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
