@@ -26,7 +26,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "main": "app.js",
   "repository": {
@@ -34,5 +35,10 @@
     "url": "git://github.com/anonymous node/sails user/MealTracker.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
 }
