@@ -15,6 +15,10 @@ module.exports = {
   connections: {
     someMongodbServer: {
       ssl: true
+    },
+
+    grunt: {
+      _hookTimeout: 60000
     }
   }
 
